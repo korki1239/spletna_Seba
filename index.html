@@ -11,22 +11,44 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      font-family: Arial, sans-serif;
     }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* pomembno: navpična postavitev */
+      align-items: center;
+    }
+
     img {
       max-width: 300px;
       height: auto;
       cursor: pointer;
     }
+
+    .link-text {
+      margin-top: 2cm; /* razmik med sliko in spodnjim linkom */
+      font-size: 18px;
+      color: white;
+      text-decoration: underline;
+    }
+
+    .link-text:hover {
+      color: lightgreen;
+    }
   </style>
 </head>
 <body>
-  <a href="https://www.tportal.hr/lifestyle/clanak/burger-ivana-zidara-nasao-se-medu-50-najboljih-u-europi-foto-20200120">
-    <img src="slika.png" alt="Klikni za povezavo">
-  </a>
+  <div class="container">
+    <!-- Klikabilna slika -->
+    <a href="https://www.tportal.hr/lifestyle/clanak/burger-ivana-zidara-nasao-se-medu-50-najboljih-u-europi-foto-20200120">
+      <img src="slika.png" alt="Klikni sliko">
+    </a>
 
-  <!-- Besedilni link pod sliko -->
-  <a href="https://media.tenor.com/qPJATHFaNgEAAAAM/winnie-the-pooh-hungry.gif">
-    Klikni tukaj za več informacij
-  </a>
+    <!-- Besedilni link pod sliko -->
+    <a class="https://media.tenor.com/qPJATHFaNgEAAAAM/winnie-the-pooh-hungry.gif">
+      Klikni tukaj za več informacij
+    </a>
+  </div>
 </body>
 </html>
